@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 .glow-button {
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-  box-shadow: 0 0 20px rgba(249, 115, 22, 0.3), 0 4px 12px rgba(249, 115, 22, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
 .glow-button:hover {
