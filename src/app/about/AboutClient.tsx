@@ -461,7 +461,7 @@ export default function AboutClient() {
       {/* ══════════════════════════════
           STATS BAR
          ══════════════════════════════ */}
-      <section ref={statsRef} className="py-16 relative">
+      <section ref={statsRef} className="py-16 relative overflow-hidden">
         <div className="section-divider mb-16" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -499,7 +499,7 @@ export default function AboutClient() {
       {/* ══════════════════════════════
           PROCESS SECTION
          ══════════════════════════════ */}
-      <section id="process" className="py-20 relative scroll-mt-24">
+      <section id="process" className="py-20 relative overflow-hidden scroll-mt-24">
         <div className="grid-pattern absolute inset-0 opacity-50 pointer-events-none" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
@@ -635,7 +635,7 @@ export default function AboutClient() {
       {/* ══════════════════════════════
           OUR CORE
          ══════════════════════════════ */}
-      <section className="py-20 relative">
+      <section className="py-20 relative overflow-hidden">
         <div className="section-divider mb-20" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-16">
