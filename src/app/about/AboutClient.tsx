@@ -3,7 +3,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { 
   Search, Map as MapIcon, Zap, ShieldCheck, Wrench, Rocket, BarChart, Lightbulb, Handshake, 
-  Telescope, Target, Brain, Sparkles, TrendingUp, Palette, Lock, Globe 
+  Telescope, Target, Brain, Sparkles, TrendingUp, Palette, Lock, Globe,
+  Facebook, Instagram, Linkedin
 } from 'lucide-react';
 
 /* ─────────────────────────────────────────────
@@ -722,60 +723,85 @@ export default function AboutClient() {
       <section className="py-24 relative overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 50% 100%, rgba(249,115,22,0.09), transparent 60%)' }}
+          style={{ background: 'radial-gradient(ellipse at 50% 100%, rgba(249,115,22,0.06), transparent 70%)' }}
         />
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <AnimSection>
             <div
-              className="relative p-12 md:p-16 rounded-3xl overflow-hidden"
+              className="relative p-12 md:p-20 rounded-[2rem] overflow-hidden"
               style={{
-                background: 'var(--card-bg)',
+                background: 'rgba(15, 15, 15, 0.4)',
                 border: '1px solid rgba(249,115,22,0.2)',
                 backdropFilter: 'blur(20px)',
-                boxShadow: '0 0 80px rgba(249,115,22,0.07)',
+                boxShadow: '0 0 60px rgba(249,115,22,0.05)',
               }}
             >
-              {/* Corner accent overlays */}
-              <div
-                className="absolute top-0 left-0 w-28 h-28 rounded-br-3xl pointer-events-none"
-                style={{ background: 'linear-gradient(135deg, rgba(249,115,22,0.1), transparent)' }}
-              />
-              <div
-                className="absolute bottom-0 right-0 w-28 h-28 rounded-tl-3xl pointer-events-none"
-                style={{ background: 'linear-gradient(315deg, rgba(249,115,22,0.1), transparent)' }}
-              />
-
-              <div
-                className="inline-block mb-6 rounded-2xl p-4"
-                style={{ background: 'rgba(249,115,22,0.12)', border: '1px solid rgba(249,115,22,0.25)' }}
+              {/* Floating Icons */}
+              {/* Facebook - Top Left */}
+              <div 
+                className="absolute hidden md:flex items-center justify-center rounded-xl animate-float"
+                style={{ 
+                  top: '25%', left: '10%', width: '48px', height: '48px',
+                  background: 'rgba(249,115,22,0.05)', border: '1px solid rgba(249,115,22,0.3)',
+                  animationDelay: '0s'
+                }}
               >
-                <Rocket className="w-10 h-10 text-orange-500" />
+                <Facebook className="w-6 h-6 text-orange-500" />
+              </div>
+              
+              {/* Instagram - Bottom Left */}
+              <div 
+                className="absolute hidden md:flex items-center justify-center rounded-xl animate-float"
+                style={{ 
+                  bottom: '25%', left: '18%', width: '48px', height: '48px',
+                  background: 'rgba(249,115,22,0.05)', border: '1px solid rgba(249,115,22,0.3)',
+                  animationDelay: '1s'
+                }}
+              >
+                <Instagram className="w-6 h-6 text-orange-500" />
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-black font-display mb-4" style={{ color: 'var(--fg)' }}>
-                Let&apos;s Build Something{' '}
-                <span className="gradient-text">Digital Together</span>
-              </h2>
-              <p className="text-base mb-10" style={{ color: 'var(--muted-fg)' }}>
-                Transform your vision into reality with our digital expertise.
-              </p>
+              {/* X / Twitter - Mid Right */}
+              <div 
+                className="absolute hidden md:flex items-center justify-center rounded-xl animate-float"
+                style={{ 
+                  top: '35%', right: '15%', width: '48px', height: '48px',
+                  background: 'rgba(249,115,22,0.05)', border: '1px solid rgba(249,115,22,0.3)',
+                  animationDelay: '2s'
+                }}
+              >
+                <div className="text-orange-500 font-bold text-xl leading-none font-display mb-0.5">X</div>
+              </div>
 
-              <div className="flex flex-wrap gap-4 justify-center">
-                <a href="/contact" className="glow-button px-8 py-4 rounded-xl font-bold text-white text-base">
-                  Start Your Project →
-                </a>
-                <a
-                  href="/services"
-                  className="px-8 py-4 rounded-xl font-bold text-base"
-                  style={{
-                    border: '1px solid var(--border-light)',
-                    color: 'var(--fg)',
-                    background: 'var(--surface-1)',
-                    transition: 'all 0.3s',
-                  }}
-                >
-                  View Services
-                </a>
+              {/* LinkedIn - Bottom Right */}
+              <div 
+                className="absolute hidden md:flex items-center justify-center rounded-xl animate-float"
+                style={{ 
+                  bottom: '30%', right: '8%', width: '48px', height: '48px',
+                  background: 'rgba(249,115,22,0.05)', border: '1px solid rgba(249,115,22,0.3)',
+                  animationDelay: '3s'
+                }}
+              >
+                <Linkedin className="w-6 h-6 text-orange-500" />
+              </div>
+
+              {/* Content */}
+              <div className="max-w-2xl mx-auto relative z-10">
+                <h2 className="text-4xl md:text-5xl font-black font-display mb-6 tracking-tight" style={{ color: 'var(--fg)' }}>
+                  Unlock Your Social Media<br />
+                  Success with AI
+                </h2>
+                <p className="text-base md:text-lg mb-10 leading-relaxed" style={{ color: 'var(--muted-fg)' }}>
+                  Unlock the power of AI-driven content creation and scheduling to
+                  elevate your social media game.<br className="hidden md:block" />
+                  Experience seamless integration, insightful analytics, and more.
+                </p>
+
+                <div className="flex justify-center">
+                  <a href="/contact" className="glow-button px-8 py-3.5 rounded-lg font-bold text-white text-sm">
+                    Get Started - It&apos;s Free
+                  </a>
+                </div>
               </div>
             </div>
           </AnimSection>
