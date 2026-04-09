@@ -976,40 +976,6 @@ function TestimonialsSection() {
   );
 }
 
-/* ───────────── Integrations Preview ───────────── */
-function IntegrationsPreview() {
-  const integrations = [
-    { name: 'Instagram', desc: 'Optimize your presence with Caps AI.', color: 'from-pink-500/20 to-purple-500/20' },
-    { name: 'Facebook', desc: 'Connect your audience on Facebook.', color: 'from-blue-500/20 to-blue-600/20' },
-    { name: 'Twitter', desc: 'Join the conversation on Twitter.', color: 'from-sky-400/20 to-sky-500/20' },
-    { name: 'LinkedIn', desc: 'Build your network on LinkedIn.', color: 'from-blue-600/20 to-blue-700/20' },
-    { name: 'Pinterest', desc: 'Discover new ideas on Pinterest.', color: 'from-red-500/20 to-red-600/20' },
-    { name: 'YouTube', desc: 'Share your videos on YouTube.', color: 'from-red-600/20 to-red-700/20' },
-  ];
-
-  return (
-    <section className="py-24 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Connect your tools</h2>
-          <p className="text-muted max-w-2xl mx-auto">Through integrations with tools like Instagram, Facebook and Twitter, post directly from your dashboard.</p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {integrations.map((item, i) => (
-            <div key={i} className="glass-card rounded-2xl p-6 group cursor-pointer">
-              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                <span className="text-lg font-bold" style={{ color: 'var(--fg)', opacity: 0.6 }}>{item.name[0]}</span>
-              </div>
-              <h3 className="text-base font-semibold text-white mb-1">{item.name}</h3>
-              <p className="text-sm text-muted">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 /* ───────────── CTA Section ───────────── */
 function CTASection() {
   return (
@@ -1052,7 +1018,6 @@ export default function HomePage() {
       <div className="section-divider" />
       <TestimonialsSection />
       <div className="section-divider" />
-      <IntegrationsPreview />
       <CTASection />
     </>
   );
