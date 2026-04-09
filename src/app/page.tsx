@@ -199,21 +199,21 @@ function HeroSection() {
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+        <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 mb-6 animate-fade-in-up w-full" style={{ animationDelay: '0.2s' }}>
           <Link
             href="/contact"
-            className="glow-button px-8 py-3.5 text-sm font-semibold rounded-full inline-flex items-center gap-2"
+            className="glow-button px-4 py-2.5 sm:px-8 sm:py-3.5 text-xs sm:text-sm font-semibold rounded-md inline-flex items-center justify-center gap-1.5 sm:gap-2 flex-1 sm:flex-none max-w-[160px] sm:max-w-none text-center"
             style={{ color: '#fff' }}
           >
             Book Appointment
           </Link>
           <Link
             href="/services"
-            className="px-8 py-3.5 text-sm font-medium text-fg rounded-full inline-flex items-center gap-2 transition-colors"
+            className="px-4 py-2.5 sm:px-8 sm:py-3.5 text-xs sm:text-sm font-medium text-fg rounded-md inline-flex items-center justify-center gap-1.5 sm:gap-2 transition-colors flex-1 sm:flex-none max-w-[160px] sm:max-w-none text-center"
             style={{ border: '1px solid var(--border)', background: 'var(--surface-1)' }}
           >
             Explore Services
-            <Play className="w-4 h-4 fill-current" />
+            <Play className="w-3 h-3 sm:w-4 sm:h-4 fill-current" />
           </Link>
         </div>
 
@@ -989,12 +989,12 @@ function CTASection() {
         <p className="text-lg text-muted max-w-2xl mx-auto mb-10">
           Partner with Digiworld Technologies and dominate your market. Start unlocking incredible results and double your impact today.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="/contact" className="glow-button px-8 py-3.5 text-sm font-semibold rounded-full inline-flex items-center gap-2" style={{ color: '#fff' }}>
-            Get a Free Proposal <ArrowRight className="w-4 h-4" />
+        <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 w-full px-2">
+          <Link href="/contact" className="glow-button px-4 py-2.5 sm:px-8 sm:py-3.5 text-xs sm:text-sm font-semibold rounded-md inline-flex items-center justify-center gap-1.5 sm:gap-2 flex-1 sm:flex-none max-w-[160px] sm:max-w-none text-center" style={{ color: '#fff' }}>
+            Free Proposal <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 hidden xs:block" />
           </Link>
-          <Link href="/services" className="px-8 py-3.5 text-sm font-medium text-fg rounded-full inline-flex items-center gap-2 transition-colors" style={{ border: '1px solid var(--border)', background: 'var(--surface-1)' }}>
-            Talk to an Expert <ArrowRight className="w-4 h-4" />
+          <Link href="/services" className="px-4 py-2.5 sm:px-8 sm:py-3.5 text-xs sm:text-sm font-medium text-fg rounded-md inline-flex items-center justify-center gap-1.5 sm:gap-2 transition-colors flex-1 sm:flex-none max-w-[160px] sm:max-w-none text-center whitespace-nowrap" style={{ border: '1px solid var(--border)', background: 'var(--surface-1)' }}>
+            Talk to Expert <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 hidden xs:block" />
           </Link>
         </div>
       </div>
